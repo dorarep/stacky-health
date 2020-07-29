@@ -2,7 +2,7 @@
   "name": "stacky-health",
   "version": "1.0.0",
   "scripts": {
-    "build": "amdxg build && next build && next export && amdxg postbuild:rss && node script/generate-ogp.mjs",
+    "build": "amdxg build && next build && next export",
     "dev": "amdxg build && next"
   },
   "dependencies": {
