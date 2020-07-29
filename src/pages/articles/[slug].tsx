@@ -14,6 +14,7 @@ type Props = {
     title: string;
     created: number;
     tags?: string[];
+    thumbnail?: string;
   };
   tags: string[];
   html: string;
@@ -64,6 +65,7 @@ const ArticlePage: NextPage<Props> = props => (
     </Head>
     <Layout>
       <a href='/'>back</a>
+      {props.frontmatter.thumbnail && <amp-img layout="responsive" width='560' height='315' src={props.frontmatter.thumbnail} />}
       <div
         className="markdown-body"
         dangerouslySetInnerHTML={{ __html: props.html }}

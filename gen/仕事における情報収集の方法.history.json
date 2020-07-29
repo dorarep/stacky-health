@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "date": "Wed Jul 29 16:00:51 2020 +0900",
+    "hash": "23af530",
+    "author": "dorarep",
+    "message": "feat: enable to create japanese tag & doc"
+  }
+]
