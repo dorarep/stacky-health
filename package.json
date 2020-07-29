@@ -1,0 +1,21 @@
+{
+  "name": "stacky-health",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "amdxg build && next build && next export && amdxg postbuild:rss && node script/generate-ogp.mjs",
+    "dev": "amdxg build && next"
+  },
+  "dependencies": {
+    "amdx": "^0.9.0",
+    "amdx-runner": "^0.9.0",
+    "next": "latest",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.43",
+    "amdx-loader": "^0.9.0",
+    "amdxg-cli": "^0.9.4",
+    "typescript": "^3.9.7"
+  }
+}
