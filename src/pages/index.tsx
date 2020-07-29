@@ -38,11 +38,11 @@ const IndexPage: NextPage<Props> = ({ pages, tags }) => (
     <h1>{ssgConfig.siteName}</h1>
     <h2>pages</h2>
     <ul>
-      {pages.map(page => (<li key={page.slug}><a href={`/articles/${page.slug}`}>{page.title}</a></li>))}
+      {pages.map(page => (<li key={page.slug}><a href={encodeURI(`/articles/${page.slug}`)}>{page.title}</a></li>))}
     </ul>
     <h2>tags</h2>
     <ul>
-      {tags.map(tag => (<li key={tag}><a href={`/tags/${tag}`}>{tag}</a></li>))}
+      {tags.map(tag => (<li key={tag}><a href={encodeURI(`/tags/${tag}`)}>{tag}</a></li>))}
     </ul>
   </Layout>
 );

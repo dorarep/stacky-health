@@ -23,7 +23,7 @@ export const config: PageConfig = {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => ({
-  paths: Object.keys(tagmap as TagMap).map(tag => `/tags/${tag}`),
+  paths: Object.keys(tagmap as TagMap).map(tag => encodeURI(`/tags/${tag}`)),
   fallback: false
 });
 

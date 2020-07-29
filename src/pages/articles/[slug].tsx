@@ -24,7 +24,7 @@ export const config: PageConfig = {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => ({
-  paths: pages.map(page => `/articles/${page.slug}`),
+  paths: pages.map(page => encodeURI(`/articles/${page.slug}`)),
   fallback: false
 });
 
