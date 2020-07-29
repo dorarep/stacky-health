@@ -1,8 +1,9 @@
 {
   "name": "stacky-health",
   "version": "1.0.0",
+  "license": "UNLICENSED",
   "scripts": {
-    "build": "amdxg build && next build && next export",
+    "build": "amdxg build && next build && next export && node script/generate-ogp.mjs",
     "dev": "amdxg build && next"
   },
   "dependencies": {
@@ -17,5 +18,8 @@
     "amdx-loader": "^0.9.0",
     "amdxg-cli": "^0.9.4",
     "typescript": "^3.9.7"
+  },
+  "optionalDependencies": {
+    "canvas": "^2.6.1"
   }
 }
