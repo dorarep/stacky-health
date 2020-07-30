@@ -1,5 +1,6 @@
 import React from "react";
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import ssgConfig from "../../amdxg.config";
 
 export default class extends Document {
   render () {
@@ -15,9 +16,9 @@ export default class extends Document {
             <script type="application/json" dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 vars: {
-                  gtag_id: 'UA-110092791-3',
+                  gtag_id: ssgConfig.gtag,
                   config: {
-                    'UA-110092791-3': { groups: "default" }
+                    [ssgConfig.gtag]: { groups: "default" }
                   }
                 }
               })
