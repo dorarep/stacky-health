@@ -1,17 +1,31 @@
 import React from "react";
-import Document, { Main, NextScript } from 'next/document'
-import {AmpAnalytics} from "../components/amp/AmpAnalytics";
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 export default class extends Document {
   render () {
     return (
-      <html>
+      <Html>
+        <Head>
+          <script async custom-element="amp-analytics" key="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js" />
+        </Head>
         <body>
           <Main />
           <NextScript />
-          <AmpAnalytics />
+          <amp-analytics type="gtag" data-credentials="include">
+            <script type="application/json" dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                vars: {
+                  gtag_id: 'UA-110092791-3',
+                  config: {
+                    'UA-110092791-3': { groups: "default" }
+                  }
+                }
+              })
+            }}>
+            </script>
+          </amp-analytics>
         </body>
-      </html>
+      </Html>
     )
   }
 }
