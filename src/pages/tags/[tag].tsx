@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import {GetStaticPaths, GetStaticProps, NextPage, PageConfig} from "next";
 import tagmap from "../../../gen/tagmap.json";
-import {Layout} from "../../components/Layout";
+import {Body} from "../../components/atoms/layouts/Body";
 import ssgConfig from "../../../amdxg.config";
+import {Main} from "../../components/atoms/layouts/Main";
+import {Header} from "../../components/organisms/common/Header";
 
 type Pages = {
   title: string;
@@ -39,16 +41,18 @@ export const getStaticProps: GetStaticProps = async (props) => {
 };
 
 const TagPage: NextPage<Props> = ({ tag, pages }) => (
-  <Layout>
+  <Body>
     <Head>
       <title>{tag} - {ssgConfig.siteName}</title>
     </Head>
-    <a href='/'>back</a>
-    <h1>{tag}</h1>
-    <ul>
-      {pages.map(page => (<li key={page.slug}><a href={`/articles/${page.slug}`}>{page.title}</a></li>))}
-    </ul>
-  </Layout>
+    <Header />
+    <Main>
+      <h1>{tag}</h1>
+      <ul>
+        {pages.map(page => (<li key={page.slug}><a href={`/articles/${page.slug}`}>{page.title}</a></li>))}
+      </ul>
+    </Main>
+  </Body>
 );
 
 export default TagPage;

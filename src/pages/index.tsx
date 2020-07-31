@@ -1,8 +1,10 @@
 import Head from 'next/head'
-import { Layout } from '../components/Layout'
+import { Body } from '../components/atoms/layouts/Body'
 import {GetStaticProps, NextPage, PageConfig} from "next";
 import tagmap from "../../gen/tagmap.json";
 import ssgConfig from "../../amdxg.config";
+import {Header} from "../components/organisms/common/Header";
+import {Main} from "../components/atoms/layouts/Main";
 
 type Props = {
   pages: {
@@ -31,20 +33,22 @@ export const getStaticProps: GetStaticProps = async (props) => {
 }
 
 const IndexPage: NextPage<Props> = ({ pages, tags }) => (
-  <Layout>
+  <Body>
     <Head>
       <title>{ssgConfig.siteName}</title>
     </Head>
-    <h1>{ssgConfig.siteName}</h1>
-    <h2>pages</h2>
-    <ul>
-      {pages.map(page => (<li key={page.slug}><a href={encodeURI(`/articles/${page.slug}`)}>{page.title}</a></li>))}
-    </ul>
-    <h2>tags</h2>
-    <ul>
-      {tags.map(tag => (<li key={tag}><a href={encodeURI(`/tags/${tag}`)}>{tag}</a></li>))}
-    </ul>
-  </Layout>
+    <Header />
+    <Main>
+      <h2>pages</h2>
+      <ul>
+        {pages.map(page => (<li key={page.slug}><a href={encodeURI(`/articles/${page.slug}`)}>{page.title}</a></li>))}
+      </ul>
+      <h2>tags</h2>
+      <ul>
+        {tags.map(tag => (<li key={tag}><a href={encodeURI(`/tags/${tag}`)}>{tag}</a></li>))}
+      </ul>
+    </Main>
+  </Body>
 );
 
 export default IndexPage;

@@ -7,6 +7,7 @@ export default class extends Document {
     return (
       <Html>
         <Head>
+          <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet" />
           <script async custom-element="amp-analytics" key="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js" />
         </Head>
         <body>

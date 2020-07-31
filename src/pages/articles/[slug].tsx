@@ -3,7 +3,10 @@ import {GetStaticPaths, GetStaticProps, NextPage, PageConfig} from "next";
 import ReactDOMServer from "react-dom/server";
 import pages from "../../../gen/pages.json";
 import ssgConfig from "../../../amdxg.config";
-import {Layout} from "../../components/Layout";
+import {Body} from "../../components/atoms/layouts/Body";
+import {Article} from "../../components/organisms/article/Article";
+import {Main} from "../../components/atoms/layouts/Main";
+import {Header} from "../../components/organisms/common/Header";
 
 type Props = {
   slug: string;
@@ -63,14 +66,17 @@ const ArticlePage: NextPage<Props> = props => (
         content={ssgConfig.host + "/ogp/" + props.slug + ".png"}
       />
     </Head>
-    <Layout>
-      <a href='/'>back</a>
-      {props.frontmatter.thumbnail && <amp-img layout="responsive" width='560' height='315' src={props.frontmatter.thumbnail} />}
-      <div
-        className="markdown-body"
-        dangerouslySetInnerHTML={{ __html: props.html }}
-      />
-    </Layout>
+    <Body>
+      <Header />
+      <Main>
+        <Article title={props.frontmatter.title} thumbnail={props.frontmatter.thumbnail} created={props.frontmatter.created}>
+          <div
+            className="markdown-body"
+            dangerouslySetInnerHTML={{ __html: props.html }}
+          />
+        </Article>
+      </Main>
+    </Body>
   </>
 );
 
