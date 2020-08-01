@@ -5,6 +5,7 @@ import tagmap from "../../gen/tagmap.json";
 import ssgConfig from "../../amdxg.config";
 import {Header} from "../components/organisms/common/Header";
 import {Main} from "../components/atoms/layouts/Main";
+import {Articles} from "../components/organisms/home/Articles";
 
 type Props = {
   pages: {
@@ -30,7 +31,7 @@ export const getStaticProps: GetStaticProps = async (props) => {
       tags
     }
   });
-}
+};
 
 const IndexPage: NextPage<Props> = ({ pages, tags }) => (
   <Body>
@@ -39,10 +40,7 @@ const IndexPage: NextPage<Props> = ({ pages, tags }) => (
     </Head>
     <Header />
     <Main>
-      <h2>pages</h2>
-      <ul>
-        {pages.map(page => (<li key={page.slug}><a href={encodeURI(`/articles/${page.slug}`)}>{page.title}</a></li>))}
-      </ul>
+      <Articles pages={pages} />
       <h2>tags</h2>
       <ul>
         {tags.map(tag => (<li key={tag}><a href={encodeURI(`/tags/${tag}`)}>{tag}</a></li>))}

@@ -15,7 +15,7 @@ export const Article: FC<Props> = ({
                                    }) => (
   <>
     <article>
-      <Time date={new Date(created)}></Time>
+      <Time date={new Date(created)} />
       <h1>{title}</h1>
       {thumbnail && <amp-img layout="responsive" width='560' height='315' src={thumbnail} />}
       {children}
@@ -60,6 +60,14 @@ export const Article: FC<Props> = ({
           font-weight: 400;
           letter-spacing: 0;
         }
+        h4 {
+          font-size: 1.3rem;
+          line-height: 1.8rem;
+          padding: 2px 12px;
+          margin-top: 1rem;
+          margin-bottom: .8rem;
+          border-left: 2px solid #487578;
+        }
         blockquote {
           padding: 1rem;
           margin: 0;
@@ -67,7 +75,7 @@ export const Article: FC<Props> = ({
           background: #eee;
           border-radius: 4px;
         }
-        strong {
+        em {
           background: linear-gradient(transparent 60%, #ffff66 60%);
         }
       `}</style>
