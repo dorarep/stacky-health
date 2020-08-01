@@ -10,7 +10,7 @@ export const Body: FC = ({ children }) => (
       del, dfn, em, img, ins, kbd, q, s, samp,
       small, strike, sub, sup, tt, var,
       b, u, i, center,
-      dl, dt, dd, ol, ul, li,
+      dl, dt, dd,
       fieldset, form, label, legend,
       table, caption, tbody, tfoot, thead, tr, th, td,
       article, aside, canvas, details, embed, 
@@ -34,9 +34,6 @@ export const Body: FC = ({ children }) => (
       article, aside, details, figcaption, figure, 
       footer, header, hgroup, menu, nav, section {
         display: block;
-      }
-      ol, ul {
-        list-style: none;
       }
       p {
         margin-block-start: 1.2rem;

@@ -39,11 +39,11 @@ export const Article: FC<Props> = ({
         }
         h2 {
           font-size: 1.65rem;
-          line-height: 2rem;
+          line-height: 2.2rem;
           padding: 15px;
           padding-bottom: 16px;
-          margin-top: 2.6rem;
-          margin-bottom: 1.6rem;
+          margin-top: 3rem;
+          margin-bottom: 2rem;
           background-color: #E4F1EF;
           border-radius: 2px;
           font-weight: 400;
@@ -54,8 +54,8 @@ export const Article: FC<Props> = ({
           line-height: 2rem;
           padding: 4px 8px;
           padding-top: 0;
-          margin-top: 2.3rem;
-          margin-bottom: 1.6rem;
+          margin-top: 3rem;
+          margin-bottom: 2rem;
           border-bottom: 3px solid #487578;
           font-weight: 400;
           letter-spacing: 0;
@@ -64,8 +64,8 @@ export const Article: FC<Props> = ({
           font-size: 1.3rem;
           line-height: 1.8rem;
           padding: 2px 12px;
-          margin-top: 1rem;
-          margin-bottom: .8rem;
+          margin-top: 3rem;
+          margin-bottom: 2rem;
           border-left: 2px solid #487578;
         }
         blockquote {
@@ -77,6 +77,18 @@ export const Article: FC<Props> = ({
         }
         em {
           background: linear-gradient(transparent 60%, #ffff66 60%);
+        }
+        ul, ol {
+          color: #487578;
+          border: dashed 2px #487578;
+          background: white;
+          padding: 0.5em 0.5em 0.5em 2em;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+        }
+        ul li, ol li {
+          line-height: 1.5;
+          padding: 0.5em 0;
         }
       `}</style>
   </>
