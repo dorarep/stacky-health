@@ -25,7 +25,7 @@ export const Body: FC = ({ children }) => (
         vertical-align: baseline;
       }
       body {
-        font-family: "M PLUS 1p", sans-serif;
+        font-family: sans-serif;
         line-height 2;
         font-size: 17px;
         color: #414042;
