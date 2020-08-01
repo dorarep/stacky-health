@@ -11,7 +11,7 @@ export const Header = () => (
       header {
         width: 100vw;
         height: 48px;
-        background-color: black;
+        background-color: #487578;
       }
       .container {
         margin: 0 auto;

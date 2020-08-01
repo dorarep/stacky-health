@@ -1,5 +1,4 @@
 import {FC} from "react";
-import format from 'date-fns/format';
 import {Time} from "../../atoms/typographies/Time";
 
 type Props = {
@@ -23,6 +22,7 @@ export const Article: FC<Props> = ({
     </article>
     <style jsx>{`
         article {
+          margin-top: 1rem;
           max-width: 900px;
           background-color: white;
           padding: 1rem;
@@ -34,6 +34,9 @@ export const Article: FC<Props> = ({
         }
       `}</style>
     <style jsx global>{`
+        .markdown-body:first-child {
+          visibility: hidden;
+        }
         h2 {
           font-size: 1.65rem;
           line-height: 2rem;
@@ -41,8 +44,7 @@ export const Article: FC<Props> = ({
           padding-bottom: 16px;
           margin-top: 2.6rem;
           margin-bottom: 1.6rem;
-          background-color: #333;
-          color: #fff;
+          background-color: #E4F1EF;
           border-radius: 2px;
           font-weight: 400;
           letter-spacing: 0;
@@ -54,7 +56,7 @@ export const Article: FC<Props> = ({
           padding-top: 0;
           margin-top: 2.3rem;
           margin-bottom: 1.6rem;
-          border-bottom: 3px solid #2b2b2b;
+          border-bottom: 3px solid #487578;
           font-weight: 400;
           letter-spacing: 0;
         }
@@ -64,6 +66,9 @@ export const Article: FC<Props> = ({
           font-size: 0.9rem;
           background: #eee;
           border-radius: 4px;
+        }
+        strong {
+          background: linear-gradient(transparent 60%, #ffff66 60%);
         }
       `}</style>
   </>

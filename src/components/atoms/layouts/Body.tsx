@@ -8,7 +8,7 @@ export const Body: FC = ({ children }) => (
       pre,
       a, abbr, acronym, address, big, cite, code,
       del, dfn, em, img, ins, kbd, q, s, samp,
-      small, strike, strong, sub, sup, tt, var,
+      small, strike, sub, sup, tt, var,
       b, u, i, center,
       dl, dt, dd, ol, ul, li,
       fieldset, form, label, legend,
@@ -28,8 +28,8 @@ export const Body: FC = ({ children }) => (
         font-family: "M PLUS 1p", sans-serif;
         line-height 2;
         font-size: 17px;
-        color: #333;
-        background-color: #eef0f1;
+        color: #414042;
+        background-color: #F7F6F5;
       }
       article, aside, details, figcaption, figure, 
       footer, header, hgroup, menu, nav, section {

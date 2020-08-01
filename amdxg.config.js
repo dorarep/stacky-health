@@ -1,7 +1,7 @@
 module.exports = {
   useOgp: true,
-  host: "https://dorarep.page/",
-  siteName: "doralog",
+  host: "https://health.dorarep.page/",
+  siteName: "Stacky Health",
   author: "dorarep",
   authorLink: "https://twitter.com/dorarep",
   lang: "ja",

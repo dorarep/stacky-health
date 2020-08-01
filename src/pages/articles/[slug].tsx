@@ -36,13 +36,14 @@ export const getStaticProps: GetStaticProps = async (props) => {
   const slug = props.params.slug;
   const { default: Doc, toc, frontmatter } = await import(`../../../docs/${slug}.mdx`);
   const { default: history } = await import(`../../../gen/${slug}.history.json`);
+  console.log(Doc, toc);
 
   return ({
     props: {
       slug,
       toc,
       history,
-      tags: frontmatter.tags || [],
+      tags: frontmatter?.tags || [],
       frontmatter: frontmatter || { title: slug, created: 0, tags: [] },
       html: ReactDOMServer.renderToStaticMarkup(<Doc amp />),
     } as Props,
@@ -63,7 +64,7 @@ const ArticlePage: NextPage<Props> = props => (
       <meta name="twitter:card" content="summary_large_image" />
       <meta
         property="og:image"
-        content={ssgConfig.host + "/ogp/" + props.slug + ".png"}
+        content={props.frontmatter.thumbnail || ssgConfig.host + "/ogp/" + props.slug + ".png"}
       />
     </Head>
     <Body>
