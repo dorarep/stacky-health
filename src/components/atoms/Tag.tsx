@@ -3,7 +3,7 @@ import {FC} from "react";
 export const Tag: FC = ({ children }) => {
   return (
     <>
-      <a href={encodeURI(`/tags/${children}`)}>
+      <a href={`/tags/${children}`}>
         {children}
       </a>
       <style jsx>{`

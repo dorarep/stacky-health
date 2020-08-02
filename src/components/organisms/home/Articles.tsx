@@ -12,7 +12,7 @@ export const Articles: FC<Props> = ({ pages }) => (
   <>
     <div>
       {pages.map(page => (
-        <a href={encodeURI(`/articles/${page.slug}`)} key={page.slug}>
+        <a href={`/articles/${page.slug}`} key={page.slug}>
           <article>
             <amp-img layout="responsive" width='560' height='315' src={page.thumbnail} />
           </article>

@@ -76,7 +76,7 @@ export const Article: FC<Props> = ({
         blockquote {
           margin-left: 0;
           margin-right: 0;
-          padding: 35px 15px 10px 15px;
+          padding: 1rem;
           box-sizing: border-box;
           font-style: italic;
           background: var(--light-gray);
