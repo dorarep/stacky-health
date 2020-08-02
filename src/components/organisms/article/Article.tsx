@@ -26,7 +26,7 @@ export const Article: FC<Props> = ({
     </article>
     <style jsx>{`
         article {
-          margin-top: 1rem;
+          width: 100%:
           max-width: 900px;
           background-color: white;
           padding: 1rem;

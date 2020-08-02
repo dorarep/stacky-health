@@ -37,7 +37,6 @@ export const getStaticProps: GetStaticProps = async (props) => {
   const slug = props.params.slug;
   const { default: Doc, toc, frontmatter } = await import(`../../../docs/${slug}.mdx`);
   const { default: history } = await import(`../../../gen/${slug}.history.json`);
-  console.log(Doc, toc);
 
   return ({
     props: {

@@ -7,11 +7,10 @@ export const Footer = () => (
     </footer>
     <style jsx>{`
       footer {
-        width: 100vw;
-        height: 32px;
+        width: 100%;
+        height: 100%;
         background-color: var(--main-color);
         box-shadow: var(--shadow);
-        margin-top: 2rem;
       }
       .container {
         margin: 0 auto;

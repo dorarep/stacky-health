@@ -2,7 +2,18 @@ import {FC} from "react";
 
 export const Body: FC = ({ children }) => (
   <>
-    {children}
+    <div>
+      {children}
+    </div>
+    <style jsx>{`
+      div {
+        width: 100vw;
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: 62px 1fr 32px;
+        gap: 2rem;
+      }
+    `}</style>
     <style jsx global>{`
       html, div, span, applet, object, iframe,
       pre,

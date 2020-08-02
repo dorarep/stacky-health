@@ -10,8 +10,8 @@ export const Header = () => (
     </header>
     <style jsx>{`
       header {
-        width: 100vw;
-        height: 62px;
+        width: 100%;
+        height: 100%;
         background-color: var(--main-color);
         box-shadow: var(--shadow);
       }
@@ -28,6 +28,9 @@ export const Header = () => (
         margin-left: 10px;
         color: white;
         font-weight: bold;
+      }
+      @media screen and (max-width: 600px) {
+        span { display: none; }
       }
       a {
         color: white;

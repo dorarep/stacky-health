@@ -3,8 +3,6 @@ import {FC} from "react";
 type Props = {
   pages: {
     title: string;
-    created: number;
-    tags: string[];
     slug: string;
     thumbnail?: string;
   }[]
@@ -23,7 +21,6 @@ export const Articles: FC<Props> = ({ pages }) => (
     </div>
     <style jsx>{`
       div {
-        margin-top: 2rem;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 2rem;
