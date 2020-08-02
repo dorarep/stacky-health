@@ -67,6 +67,10 @@ const makeStructuredData = (props: Props) => ({
   },
   publisher: {
     "@type": "Organization",
+    logo: {
+      "@type": "ImageObject",
+      "url": "https://storage.cloud.google.com/mognies/logo.png"
+    },
     name: "モグニーズ",
   }
 });
