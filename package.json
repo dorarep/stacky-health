@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "license": "UNLICENSED",
   "scripts": {
-    "build": "node script/build-tags.mjs && amdxg build:index && next build && next export",
-    "dev": "amdxg build:index && next",
+    "build": "amdxg build:index && amdxg build:history && node script/build-tags.mjs && next build && next export",
+    "dev": "amdxg build:index && amdxg build:history && node script/build-tags.mjs && next",
     "generate-ogp": "node script/generate-ogp.mjs",
     "new-page": "amdxg new:page"
   },

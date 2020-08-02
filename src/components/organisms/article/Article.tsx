@@ -19,7 +19,7 @@ export const Article: FC<Props> = ({
   <>
     <article>
       <Time date={new Date(created)} />
-      <div>{tags.map(tag => (<Tag>{tag}</Tag>))}</div>
+      <div>{tags.map(tag => (<Tag key={tag}>{tag}</Tag>))}</div>
       <h1>{title}</h1>
       {thumbnail && <amp-img layout="responsive" width='560' height='315' src={thumbnail} />}
       {children}

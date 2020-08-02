@@ -50,6 +50,26 @@ export const getStaticProps: GetStaticProps = async (props) => {
   });
 };
 
+const makeStructuredData = (props: Props) => ({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://google.com/article"
+  },
+  headline: props.frontmatter.title,
+  image: [props.frontmatter.thumbnail],
+  datePublished: new Date(props.frontmatter.created),
+  author: {
+      "@type": "Person",
+      name: "dorarep"
+  },
+  publisher: {
+      "@type": "Person",
+      name: "dorarep"
+  }
+});
+
 const ArticlePage: NextPage<Props> = props => (
   <>
     <Head>
@@ -65,6 +85,10 @@ const ArticlePage: NextPage<Props> = props => (
       <meta
         property="og:image"
         content={props.frontmatter.thumbnail || ssgConfig.host + "/ogp/" + props.slug + ".png"}
+      />
+      <script
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(makeStructuredData(props)) }}
       />
     </Head>
     <Body>
