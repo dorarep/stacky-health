@@ -95,6 +95,7 @@ export default class extends Document {
           <link rel="icon" type="image/png" sizes="24x24" href="/icon-24x24.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="/icon-32x32.png" />
           <link rel="manifest" href="/manifest.json" />
+          <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js" />
           <script async custom-element="amp-analytics" key="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js" />
         </Head>
         <body>
