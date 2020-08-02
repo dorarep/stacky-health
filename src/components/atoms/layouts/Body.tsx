@@ -72,6 +72,8 @@ export const Body: FC = ({ children }) => (
         --light-highlight-color: #FFF9E5
         --dark-gray: #888888
         --light-gray: #f5f5f5
+        --light-secondary-color: #fff8f3
+        --secondary-color: #ffc08d
       }
     `}</style>
   </>

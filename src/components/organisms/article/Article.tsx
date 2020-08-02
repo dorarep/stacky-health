@@ -120,6 +120,30 @@ export const Article: FC<Props> = ({
           background-color: var(--light-highlight-color);
           padding: 1rem;
         }
+        table {
+          border-collapse: collapse;
+          margin: 0 auto;
+          padding: 0;
+          width: 100%;
+          table-layout: fixed;
+        }
+        table tr {
+          background-color: var(--background-color);
+          padding: .35em;
+          border-bottom: 2px solid #fff;
+        }
+        table th,
+        table td {
+          padding: 1em 10px 1em 1em;
+          border-right: 2px solid #fff;
+        }
+        table th {
+          font-size: .85em;
+        }
+        table thead tr{
+          background-color: var(--main-color);
+          color:#fff;
+        }
       `}</style>
   </>
 );

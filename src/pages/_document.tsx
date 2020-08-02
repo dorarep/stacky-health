@@ -7,6 +7,7 @@ export default class extends Document {
     return (
       <Html>
         <Head>
+          <script data-ad-client="ca-pub-3842323225563416" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
           <meta name="msapplication-square70x70logo" content="/site-tile-70x70.png" />
           <meta name="msapplication-square150x150logo" content="/site-tile-150x150.png" />
           <meta name="msapplication-wide310x150logo" content="/site-tile-310x150.png" />

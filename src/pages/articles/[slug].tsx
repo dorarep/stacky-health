@@ -60,7 +60,7 @@ const makeStructuredData = (props: Props) => ({
   headline: props.frontmatter.title,
   image: [props.frontmatter.thumbnail],
   datePublished: new Date(props.frontmatter.created),
-  dateModified: new Date(props.history[0].date),
+  dateModified: new Date(props.history[0]?.date),
   author: {
     "@type": "Person",
     name: "dorarep"
