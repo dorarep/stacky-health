@@ -9,7 +9,7 @@ export const Footer = () => (
       footer {
         width: 100%;
         height: 100%;
-        background-color: var(--main-color);
+        background-color: var(--dark-main-color);
         box-shadow: var(--shadow);
       }
       .container {

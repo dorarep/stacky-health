@@ -63,6 +63,7 @@ export const Body: FC = ({ children }) => (
         border-spacing: 0;
       }
       :root {
+        --dark-main-color: #376767
         --main-color: #5CADAD
         --light-main-color: #E4F1EF
         --font-color: #414042
@@ -70,7 +71,7 @@ export const Body: FC = ({ children }) => (
         --shadow: 0 3px 6px rgba(0, 0, 0, 0.2)
         --highlight-color: #FFB36B
         --light-highlight-color: #FFF9E5
-        --dark-gray: #888888
+        --dark-gray: #515151
         --light-gray: #f5f5f5
         --light-secondary-color: #fff8f3
         --secondary-color: #ffc08d

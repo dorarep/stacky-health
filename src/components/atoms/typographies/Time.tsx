@@ -8,12 +8,12 @@ type Props = {
 
 export const Time: FC<Props> = ({ date, format = 'yyyy-MM-dd' }) => (
   <>
-    <time dateTime={date.toString()}>
+    <time dateTime={date.toISOString()}>
       {fnsFormat(date, format)}
     </time>
     <style jsx>{`
         time {
-          color: #999;
+          color: var(--dark-gray);
           font-size: 0.9rem;
         }
       `}</style>

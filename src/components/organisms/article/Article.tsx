@@ -21,7 +21,7 @@ export const Article: FC<Props> = ({
       <Time date={new Date(created)} />
       <div>{tags.map(tag => (<Tag key={tag}>{tag}</Tag>))}</div>
       <h1>{title}</h1>
-      {thumbnail && <amp-img layout="responsive" width='560' height='315' src={thumbnail} />}
+      {thumbnail && <amp-img alt="thumbnail" layout="responsive" width='560' height='315' src={thumbnail} />}
       {children}
     </article>
     <style jsx>{`
