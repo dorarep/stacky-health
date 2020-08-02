@@ -12,10 +12,9 @@ export const Tag: FC = ({ children }) => {
           line-height: 32px;
           position: relative;
           margin: 0 8px 8px 0;
-          padding: 0 10px 0 12px;
-          background: #777;
-          border-bottom-right-radius: 3px;
-          border-top-right-radius: 3px;
+          padding: 2px 10px 2px 12px;
+          background: var(--dark-main-color);
+          border-radius: 3px;
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0, 0.2);
           color: #fff;
           font-size: 16px;

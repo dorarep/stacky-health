@@ -80,7 +80,7 @@ export const Article: FC<Props> = ({
           box-sizing: border-box;
           font-style: italic;
           background: var(--light-gray);
-          color: #777777;
+          color: var(--dark-gray);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.14);
         }
         blockquote p {
@@ -116,8 +116,8 @@ export const Article: FC<Props> = ({
         .highlight-box {
           border-radius: 5px;
           border: solid 2px var(--highlight-color);
-          color: var(--highlight-color);
           background-color: var(--light-highlight-color);
+          font-weight: bold;
           padding: 1rem;
         }
         table {

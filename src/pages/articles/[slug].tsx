@@ -80,6 +80,7 @@ const ArticlePage: NextPage<Props> = props => (
     <Head>
       <title>{props.frontmatter.title} - {ssgConfig.siteName}</title>
       <meta property="og:title" content={props.frontmatter.title} />
+      <meta name="description" content={props.frontmatter.description ?? ''} />
       <meta name="twitter:site" content="@dorarep" />
       <meta
         property="og:description"
