@@ -41,10 +41,6 @@ const IndexPage: NextPage<Props> = ({ pages, tags }) => (
     <Header />
     <Main>
       <Articles pages={pages} />
-      <h2>tags</h2>
-      <ul>
-        {tags.map(tag => (<li key={tag}><a href={encodeURI(`/tags/${tag}`)}>{tag}</a></li>))}
-      </ul>
     </Main>
   </Body>
 );

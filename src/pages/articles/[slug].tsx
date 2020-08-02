@@ -70,7 +70,12 @@ const ArticlePage: NextPage<Props> = props => (
     <Body>
       <Header />
       <Main>
-        <Article title={props.frontmatter.title} thumbnail={props.frontmatter.thumbnail} created={props.frontmatter.created}>
+        <Article
+          title={props.frontmatter.title}
+          thumbnail={props.frontmatter.thumbnail}
+          created={props.frontmatter.created}
+          tags={props.frontmatter.tags}
+        >
           <div
             className="markdown-body"
             dangerouslySetInnerHTML={{ __html: props.html }}

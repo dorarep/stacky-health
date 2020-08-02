@@ -1,21 +1,25 @@
 import {FC} from "react";
 import {Time} from "../../atoms/typographies/Time";
+import {Tag} from "../../atoms/Tag";
 
 type Props = {
   title: string;
   thumbnail: string | undefined;
   created: number;
+  tags: string[];
 }
 
 export const Article: FC<Props> = ({
                                      children,
                                      title,
                                      thumbnail,
-                                     created
+                                     created,
+                                     tags
                                    }) => (
   <>
     <article>
       <Time date={new Date(created)} />
+      <div>{tags.map(tag => (<Tag>{tag}</Tag>))}</div>
       <h1>{title}</h1>
       {thumbnail && <amp-img layout="responsive" width='560' height='315' src={thumbnail} />}
       {children}
@@ -44,7 +48,8 @@ export const Article: FC<Props> = ({
           padding-bottom: 16px;
           margin-top: 3rem;
           margin-bottom: 2rem;
-          background-color: #E4F1EF;
+          background-color: var(--light-main-color);
+          border-left: 5px solid var(--main-color);
           border-radius: 2px;
           font-weight: 400;
           letter-spacing: 0;
@@ -56,7 +61,7 @@ export const Article: FC<Props> = ({
           padding-top: 0;
           margin-top: 3rem;
           margin-bottom: 2rem;
-          border-bottom: 3px solid #487578;
+          border-bottom: 3px solid var(--main-color);
           font-weight: 400;
           letter-spacing: 0;
         }
@@ -66,22 +71,40 @@ export const Article: FC<Props> = ({
           padding: 2px 12px;
           margin-top: 3rem;
           margin-bottom: 2rem;
-          border-left: 2px solid #487578;
+          border-left: 2px solid var(--main-color);
         }
         blockquote {
-          padding: 1rem;
-          margin: 0;
-          font-size: 0.9rem;
-          background: #eee;
-          border-radius: 4px;
+          margin-left: 0;
+          margin-right: 0;
+          padding: 35px 15px 10px 15px;
+          box-sizing: border-box;
+          font-style: italic;
+          background: var(--light-gray);
+          color: #777777;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.14);
+        }
+        blockquote p {
+          padding: 0;
+          margin: 7px 0;
+          line-height: 1.7;
+        }
+        blockquote cite {
+          display: block;
+          text-align: right;
+          color: var(--dark-gray);
+          font-size: 0.9em;
         }
         em {
-          background: linear-gradient(transparent 60%, #ffff66 60%);
+          font-weight: bold;
+          font-style: normal;
+          background: linear-gradient(transparent 60%, var(--light-highlight-color) 60%);
+        }
+        strong {
+          background: linear-gradient(transparent 60%, var(--light-highlight-color) 60%);
         }
         ul, ol {
-          color: #487578;
-          border: dashed 2px #487578;
-          background: white;
+          border: dashed 2px var(--highlight-color);
+          background: var(--light-highlight-color);
           padding: 0.5em 0.5em 0.5em 2em;
           margin-top: 2rem;
           margin-bottom: 2rem;
@@ -89,6 +112,13 @@ export const Article: FC<Props> = ({
         ul li, ol li {
           line-height: 1.5;
           padding: 0.5em 0;
+        }
+        .highlight-box {
+          border-radius: 5px;
+          border: solid 2px var(--highlight-color);
+          color: var(--highlight-color);
+          background-color: var(--light-highlight-color);
+          padding: 1rem;
         }
       `}</style>
   </>

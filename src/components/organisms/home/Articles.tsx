@@ -10,9 +10,7 @@ type Props = {
   }[]
 }
 
-export const Articles: FC<Props> = ({
-                                     pages
-                                   }) => (
+export const Articles: FC<Props> = ({ pages }) => (
   <>
     <div>
       {pages.map(page => (
@@ -25,19 +23,17 @@ export const Articles: FC<Props> = ({
     </div>
     <style jsx>{`
       div {
-        margin-top: 1rem;
-        background-color: white;
-        padding: 1rem;
+        margin-top: 2rem;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 1rem;
+        gap: 2rem;
       }
       article {
-        box-shadow: 0 1px 3px rgba(0,0,0,.18);
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.22);
         transition: .3s ease;
       }
       article:hover {
-        box-shadow: 0 4px 4px rgba(0,0,0,.5);
+        box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.15), 0 0 5px rgba(0, 0, 0, 0.1);
         transform: translateY(-4px);
       }
     `}</style>
