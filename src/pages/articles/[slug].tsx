@@ -54,19 +54,20 @@ const makeStructuredData = (props: Props) => ({
   "@context": "https://schema.org",
   "@type": "Article",
   mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": "https://google.com/article"
+    "@type": "WebPage",
+    "@id": "https://google.com/article"
   },
   headline: props.frontmatter.title,
   image: [props.frontmatter.thumbnail],
   datePublished: new Date(props.frontmatter.created),
+  dateModified: new Date(props.history[0].date),
   author: {
-      "@type": "Person",
-      name: "dorarep"
+    "@type": "Person",
+    name: "dorarep"
   },
   publisher: {
-      "@type": "Person",
-      name: "dorarep"
+    "@type": "Organization",
+    name: "モグニーズ",
   }
 });
 
