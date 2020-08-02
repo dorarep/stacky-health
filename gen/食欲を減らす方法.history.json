@@ -1,5 +1,11 @@
 [
   {
+    "date": "Mon Aug 3 06:04:05 2020 +0900",
+    "hash": "9e0f00b",
+    "author": "dorarep",
+    "message": "feat: add description"
+  },
+  {
     "date": "Sat Aug 1 22:13:02 2020 +0900",
     "hash": "3ba4bf8",
     "author": "dorarep",

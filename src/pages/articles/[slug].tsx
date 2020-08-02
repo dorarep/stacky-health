@@ -8,6 +8,7 @@ import {Article} from "../../components/organisms/article/Article";
 import {Main} from "../../components/atoms/layouts/Main";
 import {Header} from "../../components/organisms/common/Header";
 import {Footer} from "../../components/organisms/common/Footer";
+import Amazon from '../../components/molecules/article/Amazon';
 
 type Props = {
   slug: string;
@@ -106,10 +107,7 @@ const ArticlePage: NextPage<Props> = props => (
           created={props.frontmatter.created}
           tags={props.frontmatter.tags}
         >
-          <div
-            className="markdown-body"
-            dangerouslySetInnerHTML={{ __html: props.html }}
-          />
+          <div dangerouslySetInnerHTML={{ __html: props.html }}/>
         </Article>
       </Main>
       <Footer />

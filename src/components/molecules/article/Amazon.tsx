@@ -22,6 +22,7 @@ const Amazon: FC<Props> = ({ productKey }) => {
         <p>
           {product.title}
         </p>
+        <amp-img src={product.thumbnail} />
         <ul>
           {product.amazonUrl && (<li><a href={product.amazonUrl} rel="nofollow">Amazon</a></li>)}
           {product.kindleUrl && (<li><a href={product.kindleUrl} rel="nofollow">Kindle</a></li>)}
@@ -29,10 +30,14 @@ const Amazon: FC<Props> = ({ productKey }) => {
       </div>
       <style jsx>{`
         div {
-          margin-top: 1rem;
-          max-width: 900px;
-          background-color: white;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
           padding: 1rem;
+          box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.22);
+          transition: .3s ease;
+        }
+        div:hover {
+          box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.15), 0 0 5px rgba(0, 0, 0, 0.1);
         }
       `}</style>
     </>

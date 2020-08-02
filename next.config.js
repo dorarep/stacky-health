@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   webpack(config) {
     config.resolve.extensions.push(".mdx");
@@ -5,7 +7,7 @@ module.exports = {
       test: /\.mdx?/,
       use: [
         {
-          loader: "amdx-loader",
+          loader: path.resolve('script/custom-amdx-loader.js'),
           options: {
             amp: true,
           },
