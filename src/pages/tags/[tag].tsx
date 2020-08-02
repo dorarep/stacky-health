@@ -5,6 +5,7 @@ import {Body} from "../../components/atoms/layouts/Body";
 import ssgConfig from "../../../amdxg.config";
 import {Main} from "../../components/atoms/layouts/Main";
 import {Header} from "../../components/organisms/common/Header";
+import {Footer} from "../../components/organisms/common/Footer";
 
 type Pages = {
   title: string;
@@ -52,6 +53,7 @@ const TagPage: NextPage<Props> = ({ tag, pages }) => (
         {pages.map(page => (<li key={page.slug}><a href={`/articles/${page.slug}`}>{page.title}</a></li>))}
       </ul>
     </Main>
+    <Footer />
   </Body>
 );
 

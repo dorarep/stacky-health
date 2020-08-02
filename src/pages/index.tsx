@@ -6,6 +6,7 @@ import ssgConfig from "../../amdxg.config";
 import {Header} from "../components/organisms/common/Header";
 import {Main} from "../components/atoms/layouts/Main";
 import {Articles} from "../components/organisms/home/Articles";
+import {Footer} from "../components/organisms/common/Footer";
 
 type Props = {
   pages: {
@@ -42,6 +43,7 @@ const IndexPage: NextPage<Props> = ({ pages, tags }) => (
     <Main>
       <Articles pages={pages} />
     </Main>
+    <Footer />
   </Body>
 );
 

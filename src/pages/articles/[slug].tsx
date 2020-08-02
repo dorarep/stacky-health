@@ -7,6 +7,7 @@ import {Body} from "../../components/atoms/layouts/Body";
 import {Article} from "../../components/organisms/article/Article";
 import {Main} from "../../components/atoms/layouts/Main";
 import {Header} from "../../components/organisms/common/Header";
+import {Footer} from "../../components/organisms/common/Footer";
 
 type Props = {
   slug: string;
@@ -82,6 +83,7 @@ const ArticlePage: NextPage<Props> = props => (
           />
         </Article>
       </Main>
+      <Footer />
     </Body>
   </>
 );
