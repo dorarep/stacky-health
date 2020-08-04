@@ -41,6 +41,11 @@ const Amazon: FC<Props> = ({ slug }) => {
           color: var(--font-color);
           text-decoration: none;
         }
+        @media only screen and (max-width: 600px) {
+          .card {
+            grid-template-columns: 1fr;
+          }
+        }
         .card:hover {
           box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.15), 0 0 5px rgba(0, 0, 0, 0.1);
           transform: translateY(-4px);

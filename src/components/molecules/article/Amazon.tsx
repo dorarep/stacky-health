@@ -42,6 +42,11 @@ const Amazon: FC<Props> = ({ productKey }) => {
           box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.22);
           transition: .3s ease;
         }
+        @media only screen and (max-width: 600px) {
+          .card {
+            flex-wrap: wrap;
+          }
+        }
         p {
           font-weight: bold;
         }
