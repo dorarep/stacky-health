@@ -19,10 +19,11 @@ export const Article: FC<Props> = ({
   <>
     <article>
       <Time date={new Date(created)} />
-      <div>{tags.map(tag => (<Tag key={tag}>{tag}</Tag>))}</div>
+      <div className="tags">{tags.map(tag => (<Tag key={tag}>{tag}</Tag>))}</div>
       <h1>{title}</h1>
       {thumbnail && <amp-img alt="thumbnail" layout="responsive" width='560' height='315' src={thumbnail} />}
       {children}
+      <div className="tags">{tags.map(tag => (<Tag key={tag}>{tag}</Tag>))}</div>
     </article>
     <style jsx>{`
         article {
@@ -30,6 +31,10 @@ export const Article: FC<Props> = ({
           max-width: 900px;
           background-color: white;
           padding: 1rem;
+        }
+        .tags {
+          display: flex;
+          flex-wrap: wrap;
         }
         h1 {
           font-size: 1.5rem;
@@ -126,6 +131,10 @@ export const Article: FC<Props> = ({
           padding: 0;
           width: 100%;
           table-layout: fixed;
+          display: block;
+          overflow-x: scroll;
+          white-space: nowrap;
+          -webkit-overflow-scrolling: touch;
         }
         table tr {
           background-color: var(--background-color);

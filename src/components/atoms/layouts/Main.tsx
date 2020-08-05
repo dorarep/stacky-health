@@ -7,7 +7,7 @@ export const Main: FC = ({ children }) => (
     </main>
     <style jsx>{`
       main {
-        width: 100%;
+        width: 100vw;
         height: 100%;
         max-width: 900px;
         margin-right: auto;
