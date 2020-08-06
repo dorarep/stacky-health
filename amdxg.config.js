@@ -5,7 +5,7 @@ module.exports = {
   author: "dorarep",
   authorLink: "https://twitter.com/dorarep",
   lang: "ja",
-  gtag: "UA-110092791-3",
+  gtag: "UA-110092791-4",
   repository: "dorarep/stacky-health",
   socialShare: {
     twitter: true,
