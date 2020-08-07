@@ -1,5 +1,17 @@
 [
   {
+    "title": "超マインドフルネスな状態を体験したお話",
+    "description": "サウナ帰ってから性格が完全に変わった経験をお話します。",
+    "created": 1596787832156,
+    "tags": [
+      "サウナ",
+      "マインドフルネス",
+      "瞑想"
+    ],
+    "thumbnail": "https://untraten.sirv.com/thumbnails/super-mindfullness.png",
+    "slug": "super-mindfullness"
+  },
+  {
     "title": "筋膜リリース専門店『ゴッド・リリース』を体験してみた！",
     "description": "筋膜リリース専門店『ゴッド・リリース』を体験してみた経験から、その施術内容や効果についてまとめます。",
     "created": 1596361615961,
@@ -10,7 +22,7 @@
       "筋肉の硬さ",
       "腰痛"
     ],
-    "thumbnail": "/thumbnails/20200802.png",
+    "thumbnail": "https://untraten.sirv.com/thumbnails/20200802.png",
     "slug": "202008021846"
   },
   {
@@ -24,7 +36,7 @@
       "整体",
       "健康"
     ],
-    "thumbnail": "https://storage.googleapis.com/stacky-health/2020/02/942dfa0d67b57c9bf27441a48b2146ac.png",
+    "thumbnail": "https://untraten.sirv.com/thumbnails/942dfa0d67b57c9bf27441a48b2146ac.png",
     "slug": "ストレッチ"
   },
   {
@@ -38,7 +50,7 @@
       "瞑想",
       "読書"
     ],
-    "thumbnail": "https://storage.googleapis.com/stacky-health/2019/12/Musiqo-Guitars-1.png",
+    "thumbnail": "https://untraten.sirv.com/thumbnails/Musiqo-Guitars-1.png",
     "slug": "思いやり"
   },
   {
@@ -52,7 +64,7 @@
       "モチベーション",
       "瞑想"
     ],
-    "thumbnail": "https://storage.googleapis.com/stacky-health/2019/12/Musiqo-Guitars.png",
+    "thumbnail": "https://untraten.sirv.com/thumbnails/flow.png",
     "slug": "フロー状態"
   },
   {
@@ -65,7 +77,7 @@
       "腸内細菌",
       "健康"
     ],
-    "thumbnail": "https://storage.googleapis.com/stacky-health/2019/01/1a42a34ec6829ff16d5555d10289563f.png",
+    "thumbnail": "https://untraten.sirv.com/thumbnails/1a42a34ec6829ff16d5555d10289563f.png",
     "slug": "腸内細菌"
   },
   {
@@ -79,7 +91,7 @@
       "瞑想",
       "読書"
     ],
-    "thumbnail": "https://storage.googleapis.com/stacky-health/2018/09/6ffbf984315a1e8cc90db324cc60b9e0.jpg",
+    "thumbnail": "https://untraten.sirv.com/thumbnails/6ffbf984315a1e8cc90db324cc60b9e0.jpg",
     "slug": "習慣化"
   },
   {
@@ -91,7 +103,7 @@
       "栄養",
       "野菜"
     ],
-    "thumbnail": "https://storage.googleapis.com/stacky-health/2018/08/6216453355f174a30697f6b2a4f9017f.jpg",
+    "thumbnail": "https://untraten.sirv.com/thumbnails/6216453355f174a30697f6b2a4f9017f.jpg",
     "slug": "野菜の値段あたり栄養素"
   },
   {
@@ -103,7 +115,7 @@
       "栄養",
       "健康"
     ],
-    "thumbnail": "https://storage.googleapis.com/stacky-health/2018/08/2d8eaa8ceaa9372efca570cf54c3f825.jpg",
+    "thumbnail": "https://untraten.sirv.com/thumbnails/2d8eaa8ceaa9372efca570cf54c3f825.jpg",
     "slug": "ATP"
   },
   {
@@ -114,7 +126,7 @@
       "ミニマリスト",
       "人生"
     ],
-    "thumbnail": "https://storage.googleapis.com/stacky-health/2018/08/Minimalist.jpg",
+    "thumbnail": "https://untraten.sirv.com/thumbnails/Minimalist.jpg",
     "slug": "ミニマリスト"
   },
   {
@@ -126,7 +138,7 @@
       "感情",
       "心理"
     ],
-    "thumbnail": "https://storage.googleapis.com/stacky-health/2018/08/24329c3a51218af29263feb5e47a4886.jpg",
+    "thumbnail": "https://untraten.sirv.com/thumbnails/24329c3a51218af29263feb5e47a4886.jpg",
     "slug": "大人になる"
   },
   {
@@ -139,7 +151,7 @@
       "恋愛",
       "感情"
     ],
-    "thumbnail": "https://storage.googleapis.com/stacky-health/2018/09/da7de2522592a666d4e4657ea8ee1417.jpg",
+    "thumbnail": "https://untraten.sirv.com/thumbnails/da7de2522592a666d4e4657ea8ee1417.jpg",
     "slug": "好きになるもの"
   },
   {
@@ -152,7 +164,7 @@
       "レビュー",
       "RD-800"
     ],
-    "thumbnail": "https://storage.googleapis.com/stacky-health/2018/08/tanita-inner-scan.jpg",
+    "thumbnail": "https://untraten.sirv.com/thumbnails/tanita-inner-scan.jpg",
     "slug": "TANITAインナースキャンデュアル"
   },
   {
@@ -162,7 +174,7 @@
     "tags": [
       "話し方"
     ],
-    "thumbnail": "https://storage.googleapis.com/stacky-health/2018/09/c2b76eb8452defe7c4a26ec071f706ef.jpg",
+    "thumbnail": "https://untraten.sirv.com/thumbnails/c2b76eb8452defe7c4a26ec071f706ef.jpg",
     "slug": "好かれる話し方"
   },
   {
@@ -174,7 +186,7 @@
       "ダイエット",
       "食欲"
     ],
-    "thumbnail": "https://storage.googleapis.com/stacky-health/2018/08/957e8ed12cd35d6bc84fc9816c8c1a32.jpg",
+    "thumbnail": "https://untraten.sirv.com/thumbnails/957e8ed12cd35d6bc84fc9816c8c1a32%20(1).jpg",
     "slug": "食欲を減らす方法"
   }
 ]

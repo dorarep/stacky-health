@@ -59,7 +59,7 @@ const makeStructuredData = (props: Props) => ({
     "@id": "https://google.com/article"
   },
   headline: props.frontmatter.title,
-  image: [props.frontmatter.thumbnail],
+  image: [`${props.frontmatter.thumbnail}?w=1200`],
   datePublished: new Date(props.frontmatter.created),
   dateModified: new Date(props.history[0]?.date),
   author: {
@@ -91,7 +91,7 @@ const ArticlePage: NextPage<Props> = props => (
       <meta name="twitter:card" content="summary_large_image" />
       <meta
         property="og:image"
-        content={props.frontmatter.thumbnail || ssgConfig.host + "/ogp/" + props.slug + ".png"}
+        content={`${props.frontmatter.thumbnail}?w=1200` || ssgConfig.host + "/ogp/" + props.slug + ".png"}
       />
       <script
         type='application/ld+json'

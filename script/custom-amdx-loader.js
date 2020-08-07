@@ -1,7 +1,7 @@
 const { parse } = require('amdx');
 const { getOptions } = require('loader-utils');
 
-const imports = ['Amazon', 'ArticleCard'];
+const imports = ['Amazon', 'ArticleCard', 'Balloon'];
 
 module.exports = function (source) {
   const options = getOptions(this) || {};

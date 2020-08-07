@@ -1,4 +1,5 @@
 import {FC} from "react";
+import Img from "../../molecules/article/Img";
 
 type Props = {
   pages: {
@@ -14,7 +15,7 @@ export const Articles: FC<Props> = ({ pages }) => (
       {pages.map(page => (
         <a href={`/articles/${page.slug}`} key={page.slug}>
           <article>
-            <amp-img alt={page.title} layout="responsive" width='560' height='315' src={page.thumbnail} />
+            <Img alt={page.title} width={560} height={315} src={page.thumbnail} />
           </article>
         </a>
       ))}
