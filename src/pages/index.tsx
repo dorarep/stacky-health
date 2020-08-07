@@ -37,7 +37,7 @@ export const getStaticProps: GetStaticProps = async (props) => {
 const IndexPage: NextPage<Props> = ({ pages, tags }) => (
   <Body>
     <Head>
-      <title>{ssgConfig.siteName}</title>
+      <title>{ssgConfig.siteName} {ssgConfig.subSiteName}</title>
       <meta name="description" content={ssgConfig.description ?? ''} />
     </Head>
     <Header />

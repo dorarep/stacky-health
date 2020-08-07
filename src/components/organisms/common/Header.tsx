@@ -5,7 +5,7 @@ export const Header = () => (
     <header>
       <div className='container'>
         <a href='/'>{ssgConfig.siteName}</a>
-        <span>-健康をクリエイトするための挑戦記-</span>
+        <span>{ssgConfig.subSiteName}</span>
       </div>
     </header>
     <style jsx>{`
