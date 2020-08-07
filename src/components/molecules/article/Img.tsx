@@ -16,7 +16,7 @@ const Img: FC<Props> = ({ src, layout = 'responsive', ...props }) => (
       layout={layout}
       {...props}
     >
-      <div fallback>
+      <div fallback='fallback'>
         <amp-img
           src={src}
           srcset={`${src}?w=640 640w, ${src}?w=320 320w`}

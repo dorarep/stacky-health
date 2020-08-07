@@ -23,5 +23,13 @@
     "thumbnail": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0317/9784478110317.jpg?_ex=128x128",
     "width": 90,
     "height": 128
+  },
+  "人を動かす": {
+    "amazonUrl": "https://www.amazon.co.jp/%E4%BA%BA%E3%82%92%E5%8B%95%E3%81%8B%E3%81%99-%E6%96%87%E5%BA%AB%E7%89%88-D%E3%83%BB%E3%82%AB%E3%83%BC%E3%83%8D%E3%82%AE%E3%83%BC/dp/442210098X/ref=as_li_ss_tl?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&keywords=%E4%BA%BA%E3%82%92%E5%8B%95%E3%81%8B%E3%81%99&qid=1559580470&s=books&sr=1-1&linkCode=ll1&tag=stackyhealth-22&linkId=e8607c2d7b3c69dcd09aa3804ae23aa7&language=ja_JP",
+    "kindleUrl": "https://www.amazon.co.jp/%E4%BA%BA%E3%82%92%E5%8B%95%E3%81%8B%E3%81%99-%E6%96%87%E5%BA%AB%E7%89%88-%EF%BC%A4%E3%83%BB%E3%82%AB%E3%83%BC%E3%83%8D%E3%82%AE%E3%83%BC-ebook/dp/B01ASX39NS/ref=as_li_ss_tl?_encoding=UTF8&qid=1559580470&sr=1-1&linkCode=ll1&tag=stackyhealth-22&linkId=c6127fc895b28316e5b456c5576f08a6&language=ja_JP",
+    "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/g00q0726.tbqyk84c.g00q0726.tbqyl495/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F13534397%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F17735176%2F",
+    "thumbnail": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0982/9784422100982.jpg?_ex=128x128",
+    "width": 128,
+    "height": 128
   }
 }

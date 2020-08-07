@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "date": "Fri Aug 7 18:48:08 2020 +0900",
+    "hash": "1124da5",
+    "author": "dorarep",
+    "message": "chore: change title."
+  },
+  {
+    "date": "Fri Aug 7 18:47:18 2020 +0900",
+    "hash": "55d5916",
+    "author": "dorarep",
+    "message": "feat: add article"
+  }
+]
