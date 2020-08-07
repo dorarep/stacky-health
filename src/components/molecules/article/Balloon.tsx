@@ -10,7 +10,7 @@ const Balloon: FC<Props> = ({ img, direction = 'left', children }) => {
     <>
       <div className={`chat ${direction}`}>
         <div className="face">
-          <amp-img width='90' height='90' layout='fixed' src={`/faces/${img}.png`} />
+          <amp-img alt="しゃべっている人の顔" width='90' height='90' layout='fixed' src={`/faces/${img}.png`} />
         </div>
         <div className="balloon">
           <div className="says">

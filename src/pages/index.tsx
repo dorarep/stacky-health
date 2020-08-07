@@ -38,6 +38,7 @@ const IndexPage: NextPage<Props> = ({ pages, tags }) => (
   <Body>
     <Head>
       <title>{ssgConfig.siteName}</title>
+      <meta name="description" content={ssgConfig.description ?? ''} />
     </Head>
     <Header />
     <Main>

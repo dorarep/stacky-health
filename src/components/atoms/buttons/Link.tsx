@@ -6,7 +6,7 @@ type Props = {
 
 export const LinkButton: FC<Props> = ({ href, children }) => (
   <>
-    <a href={href} target="_blank">
+    <a href={href} rel="noopener" target="_blank">
       {children}
     </a>
     <style jsx>{`

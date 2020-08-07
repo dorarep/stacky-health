@@ -23,7 +23,7 @@ const Amazon: FC<Props> = ({ productKey }) => {
   return (
     <>
       <div className="card">
-        <amp-img src={product.thumbnail} width={product.width} height={product.height} />
+        <amp-img alt={product.title} src={product.thumbnail} width={product.width} height={product.height} />
         <div className="body">
           <p>{product.title}</p>
           <div>

@@ -12,14 +12,14 @@ const Img: FC<Props> = ({ src, layout = 'responsive', ...props }) => (
   <>
     <amp-img
       src={`${src}?format=webp`}
-      srcset={`${src}?w=640&format=webp 640w, ${src}?w=320&format=webp 320w`}
+      srcset={`${src}?w=900&format=webp 900w, ${src}?w=640&format=webp 640w, ${src}?w=320&format=webp 320w`}
       layout={layout}
       {...props}
     >
       <div fallback='fallback'>
         <amp-img
           src={src}
-          srcset={`${src}?w=640 640w, ${src}?w=320 320w`}
+          srcset={`${src}?w=900 900w, ${src}?w=640 640w, ${src}?w=320 320w`}
           layout={layout}
           {...props}
         />

@@ -13,7 +13,7 @@ export const Articles: FC<Props> = ({ pages }) => (
   <>
     <div>
       {pages.map(page => (
-        <a href={`/articles/${page.slug}`} key={page.slug}>
+        <a href={`/articles/${page.slug}`} aria-label={page.title} key={page.slug}>
           <article>
             <Img alt={page.title} width={560} height={315} src={page.thumbnail} />
           </article>
