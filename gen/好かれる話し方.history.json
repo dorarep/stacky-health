@@ -1,5 +1,11 @@
 [
   {
+    "date": "Fri Aug 7 19:00:37 2020 +0900",
+    "hash": "acc01a9",
+    "author": "dorarep",
+    "message": "fix: restore product master"
+  },
+  {
     "date": "Fri Aug 7 18:47:18 2020 +0900",
     "hash": "55d5916",
     "author": "dorarep",
