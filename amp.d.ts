@@ -25,3 +25,10 @@ declare namespace JSX {
     'amp-img': AmpImg;
   }
 }
+
+declare namespace React {
+  interface HTMLAttributes<T> extends DOMAttributes<T> {
+    fallback?: any;
+  }
+}
+

@@ -8,7 +8,6 @@ type Props = {
   alt: string;
 }
 
-// @ts-ignore
 const Img: FC<Props> = ({ src, layout = 'responsive', ...props }) => (
   <>
     <amp-img
@@ -17,7 +16,7 @@ const Img: FC<Props> = ({ src, layout = 'responsive', ...props }) => (
       layout={layout}
       {...props}
     >
-      <div fallback='fallback'>
+      <div fallback>
         <amp-img
           src={src}
           srcset={`${src}?w=640 640w, ${src}?w=320 320w`}
