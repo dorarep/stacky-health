@@ -31,5 +31,13 @@
     "thumbnail": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0982/9784422100982.jpg?_ex=128x128",
     "width": 128,
     "height": 128
+  },
+  "ひとの気持ちが聞こえたら": {
+    "amazonUrl": "https://amzn.to/3krxzt8",
+    "kindleUrl": "https://amzn.to/33INKfQ",
+    "rakutenUrl": "https://hb.afl.rakuten.co.jp/hgc/1c991439.c1eee52a.1c99143a.02f87e6d/_RTtool10000000?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F15830602%2F&amp;link_type=text&amp;ut=eyJwYWdlIjoidG9vbCIsInR5cGUiOiJ0ZXh0Iiwic2l6ZSI6IjQwMHg0MDAiLCJuYW0iOjAsIm5hbXAiOiJyaWdodCIsImNvbSI6MCwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjF9",
+    "thumbnail": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8573/9784152098573.jpg?_ex=128x128",
+    "width": 88,
+    "height": 128
   }
 }

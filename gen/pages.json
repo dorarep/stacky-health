@@ -1,5 +1,20 @@
 [
   {
+    "title": "サウナでADHDが治った理由を考える",
+    "description": "サウナでADHDが治った体験をベースに、医学的な観点から理由を考えていきます。",
+    "created": 1596967455776,
+    "tags": [
+      "自閉症",
+      "ADHD",
+      "サウナ",
+      "マインドフルネス",
+      "瞑想",
+      "身体感覚"
+    ],
+    "thumbnail": "https://untraten.sirv.com/thumbnails/sauna-adhd.png",
+    "slug": "adhd-sauna"
+  },
+  {
     "title": "Stacky Health(このブログ)の趣旨について",
     "description": "Stacky Healthというブログの趣旨を説明します。",
     "created": 1596805388115,
@@ -14,7 +29,8 @@
     "tags": [
       "サウナ",
       "マインドフルネス",
-      "瞑想"
+      "瞑想",
+      "身体感覚"
     ],
     "thumbnail": "https://untraten.sirv.com/thumbnails/super-mindfullness.png",
     "slug": "super-mindfullness"
