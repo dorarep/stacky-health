@@ -1,6 +1,16 @@
 [
   {
-    "title": "サウナでADHDが治った理由を考える",
+    "title": "親知らず抜歯6日後にサウナに行った話（いつからいけるのか）",
+    "description": "親知らず抜歯後",
+    "created": 1597146444055,
+    "tags": [
+      "サウナ"
+    ],
+    "thumbnail": "https://untraten.sirv.com/thumbnails/wisdom-tooth-sauna.png",
+    "slug": "wisdom-tooth-sauna"
+  },
+  {
+    "title": "サウナでADHDが治った体験をした",
     "description": "サウナでADHDが治った体験をベースに、医学的な観点から理由を考えていきます。",
     "created": 1596967455776,
     "tags": [
@@ -13,16 +23,6 @@
     ],
     "thumbnail": "https://untraten.sirv.com/thumbnails/sauna-adhd.png",
     "slug": "adhd-sauna"
-  },
-  {
-    "title": "親知らず抜歯6日後にサウナに行った話（いつからいけるのか）",
-    "description": null,
-    "created": 1596967455776,
-    "tags": [
-      "サウナ"
-    ],
-    "thumbnail": "https://untraten.sirv.com/thumbnails/wisdom-tooth-sauna.png",
-    "slug": "wisdom-tooth-sauna"
   },
   {
     "title": "Stacky Health(このブログ)の趣旨について",
